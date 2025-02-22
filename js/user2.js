@@ -8,6 +8,10 @@ function loadUsers2() {
 
 function displayUsers2(users) {
 
+
+    const ol = document.getElementById('ol_list_item');
+
+
     for (const user1 of users) {
         //    console.log(user1);
         // console.log(user1.email);
@@ -15,6 +19,13 @@ function displayUsers2(users) {
         console.log(user1.username);
 
 
+        // list item create:
+       const li = document.createElement('li');
+       li.innerText = 'user';
+    //    li.innerText = user1.email; 
+       li.innerText = user1.username; 
+        
+       ol.appendChild(li);
 
 
 
